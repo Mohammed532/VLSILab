@@ -1,0 +1,14 @@
+### Custom WaveView ADV log file, revision O-2018.09 (build Aug 27, ) ###
+### created at 15:28:02 on Mon Nov 18 2024 (Linux AMD64) ###
+### Host Name: husynposyseng   User ID: mohammed   PID: 15156   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 138 161
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/mohammed/.cx_hostport/.cx_hostport_husynposyseng_15156'.
