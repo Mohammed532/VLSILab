@@ -215,3 +215,106 @@ clear
 hpsice -i nand.sp > nand_out.lis 
 hspice -i nand.sp > nand_out.lis 
 vim nand_out.lis 
+clear
+ls
+tree
+clear
+mkdir Lab3
+cd Lab3
+cd ..
+cd Lab2
+ls
+cd ..
+cd Lab3
+pwd
+cp /home/mohammed/Lab2/nand.sp
+cp /home/mohammed/Lab2/nand.sp /
+cp /home/mohammed/Lab2/nand.sp f_circuit.sp
+vim f_circuit.sp 
+cd ../Lab2
+vim nand.sp
+cd ..
+ls
+git --v
+ls
+git init
+vim README.md
+git add .
+git commit -m "Working on Lab3"
+git config --global user.email "m.m.akinbayo@gmail.com"
+git config --global user.name "Mohammed532"
+git commit -m "Working on Lab3"
+git branch -M main
+git remote add origin https://github.com/Mohammed532/VLSILab.git
+git push -u origin
+git push -u origin main
+git status
+vim .gitignore
+git add .
+git commit -m "Updated gitignore"
+git status
+git push
+cd Lab3
+cd 
+ls -a
+vim .gitignore 
+clear
+cd Lab2
+vim nand.sp
+cd ../Lab3
+ls
+vim f_circuit.sp 
+hpsice -i f_circuit.sp > f_circuit_out.lis
+hspice -i f_circuit.sp > f_circuit_out.lis
+vim f_circuit_out.lis 
+vim f_circuit.sp
+hspice -i f_circuit.sp > f_circuit_out.lis
+wv &
+ls -a
+vim f_circuit.st0
+vim f_circuit.pa0
+f_circuit_out.lis
+vim f_circuit_out.lis
+vim f_circuit.sp
+vim f_circuit_out.lis
+vim f_circuit.sp
+cd ../Lab2
+vim nand
+vim nand.sp
+cd ../Lab3
+vim f_circuit
+vim f_circuit.sp
+hspice -i f_circuit.sp > f_circuit_out.lis
+clear
+hspice -i f_circuit.sp > f_circuit_out.lis
+clear
+hspice -i f_circuit.sp > f_circuit_out.lis
+clear
+cd Lab3
+ls
+rm f_cclear 
+ls
+vim f_circuit.sp
+wv &
+vim f_circuit.sp
+tmux
+vim f_circuit.sp
+cd Lab3
+clear
+hspice -i f_circuit.sp > f_cclear
+clear
+hspice -i f_circuit.sp > f_circuit_out.lis 
+hspice -i f_circuit.sp 
+cat f_circuit_out.lis 
+hspice -i f_circuit.sp 
+:q
+cd
+vim saed32nm_hvt.spf 
+cd Lab3
+ls
+hspice -i f_circuit.sp > f_circuit_out.lis 
+vim ~/saed32nm_hvt.spf 
+hspice -i f_circuit.sp > f_circuit_out.lis 
+vim f_circuit_out.lis 
+hspice -i f_circuit.sp > f_circuit_out.lis 
+vim f_circuit_out.lis 

@@ -1,0 +1,86 @@
+### Custom WaveView ADV log file, revision O-2018.09 (build Aug 27, ) ###
+### created at 15:43:14 on Mon Nov 25 2024 (Linux AMD64) ###
+### Host Name: husynposyseng   User ID: mohammed   PID: 13541   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 216 239
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {f_circuit.tr0} 8
+wv_select_list_item {FileDialog} {} {FileList} {f_circuit.tr0} 8
+wv_dclick_list_item {FileDialog} {} {FileList} {f_circuit.tr0} 8
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_drag_enter WV1
+wv_drag_leave WV1
+wv_drag_enter WV1
+wv_drag_leave WV1
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 5
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 5
+wv_drag_enter WV1
+wv_drag_to WV1 17 587
+wv_drop_on WV1
+wv_press_key Ctrl_Z 432 989
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_press_key Delete 308 208
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 5
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 5
+wv_drag_enter WV1
+wv_drag_to WV1 18 465
+wv_drag_to WV1 184 786
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(c)} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(c)} 6
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(c)} 6
+wv_drag_enter WV1
+wv_drag_to WV1 92 686
+wv_drag_to WV1 195 778
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(f)} 7
+wv_select_list_item {Custom WaveView} {} {sigview} {v(f)} 7
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(f)} 7
+wv_drag_enter WV1
+wv_drag_to WV1 48 744
+wv_drag_to WV1 66 776
+wv_drop_on WV1
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {0} {+sep=@}
+wv_collapse_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:f_circuit.tr0(0)} {0} {+sep=@}
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_dialog {ReloadFiles} 
+wv_press_button {ReloadFiles} {} {YesAll} 
+wv_press_tool_button {Custom WaveView} {} {UpdateWave0} 
+wv_select_dialog {ReloadFiles} 
+wv_press_button {ReloadFiles} {} {YesAll} 
+wv_press_tool_button {Custom WaveView} {} {ExportWaveform0} 
+wv_select_dialog {WaveformExportParameters} 
+wv_close_dialog {WaveformExportParameters} 
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {Print0} 
+wv_select_dialog {PrintSetup} 
+wv_set_check {PrintSetup} {} {PrintToFile} 1
+wv_press_button {PrintSetup} {} {PathBrowser} 
+wv_select_dialog {FileDialog} 
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_dialog {PrintSetup} 
+wv_press_button {PrintSetup} {} {Print} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL3:1 1.74028e-09 0.089011
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 8.75412e-10 0.741758

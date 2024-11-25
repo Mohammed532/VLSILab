@@ -8,12 +8,15 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/300
+~MSle0~/fdly
 
 # Command Line History (newest to oldest):
-:wq
 :w
 :q
+:wq
+:set number false
+:set number
+:8
 :4000
 :6000
 :3000
@@ -26,6 +29,14 @@
 :10
 
 # Search String History (newest to oldest):
+?/32
+?/fdly
+?/VDD
+?/NOR2X1_HVT
+?/NAND2X1_HVT
+?/NAND
+?/fdlay
+?/PULSE
 ?/300
 ?/900
 ?/idk
@@ -45,7 +56,17 @@
 # Registers:
 "0	LINE	0
 	NOR1	a	b	n1	NOR2X1_HVT
-""1	LINE	0
+"1	LINE	0
+	** Line 1730 n105 HVT (p105 for pmos)
+"2	LINE	0
+	.print v(a) v(b) v(out)
+"3	LINE	0
+	.tran 0.1ps 900ps
+"4	LINE	0
+	*Pull Down
+"5	LINE	0
+	./
+"6	LINE	0
 	* Pull Up CHANGE L AND W PLEASE OH PLEASE OH GOD
 	MMPa	out	a	vdd	vdd	p105_HVT	l=0.03u w=0.135u
 	MMPb	out	b	vdd	vdd	p105_HVT	l=0.03u w=0.135u
@@ -53,49 +74,52 @@
 	** Nodes
 	Vvdd vdd 0 1.8v
 	Vgnd gnd 0 0v
-"2	LINE	0
+"7	LINE	0
 	NAND1	n1	b	gnd	gnd 	n105_HVT	l=0.03u w=0.27u
-"3	LINE	0
+"8	LINE	0
 	** MOS Syntax: mosname drain gate source body template other_options(l,w)
-"4	CHAR	0
+"9	CHAR	0
 	nand.sp
 	
-"5	LINE	0
-	.print i(*)
-"6	LINE	0
-	.prob dc i(*)
-"7	LINE	0
-	.dc Vds 0 1.8 005 SWEEP Vgs 0 1.8 0.2
-"8	LINE	0
-	.option scale=
-"9	CHAR	0
-	0 1.8 0.2
-	
-"-	CHAR	0
-	n1
+""-	CHAR	0
+	gnd
 
 # File marks:
-'0  2  1  ~/.gitignore
-'1  3  23  ~/README.md
-'2  35  0  ~/Lab2/nand.sp
-'3  29  13  ~/Lab3/f_circuit.sp
-'4  4408  2  ~/Lab2/nand_out.lis
-'5  15  21  ~/Lab2/nand.sp
-'6  34  0  ~/Lab2/nand.sp
-'7  14  21  ~/Lab2/nand.sp
-'8  18  0  ~/Lab1/pmos/pmos.sp
-'9  18  0  ~/Lab1/nmos/nmos_2w.sp
+'0  6909  1  ~/Lab3/f_circuit_out.lis
+'1  25  0  ~/Lab3/f_circuit.sp
+'2  38  0  ~/Lab3/f_circuit.sp
+'3  33  7  ~/Lab3/f_circuit.sp
+'4  1  0  ~/Lab3/f_circuit
+'5  32  0  ~/Lab2/nand.sp
+'6  1  0  ~/Lab2/nand
+'7  6834  1  ~/Lab3/f_circuit_out.lis
+'8  9  0  ~/Lab3/f_circuit.sp
+'9  483  4  ~/Lab3/f_circuit_out.lis
 
 # Jumplist (newest first):
--'  2  1  ~/.gitignore
+-'  6909  1  ~/Lab3/f_circuit_out.lis
+-'  6834  13  ~/Lab3/f_circuit_out.lis
+-'  25  0  ~/Lab3/f_circuit.sp
+-'  38  0  ~/Lab3/f_circuit.sp
+-'  33  0  ~/Lab3/f_circuit.sp
+-'  1  0  ~/Lab3/f_circuit
+-'  32  0  ~/Lab2/nand.sp
+-'  35  0  ~/Lab2/nand.sp
+-'  1  0  ~/Lab2/nand
+-'  9  0  ~/Lab3/f_circuit.sp
+-'  483  4  ~/Lab3/f_circuit_out.lis
+-'  21  0  ~/Lab3/f_circuit_out.lis
+-'  1  7  ~/Lab3/f_circuit.pa0
+-'  1  0  ~/Lab3/f_circuit.st0
+-'  36  0  ~/Lab3/f_circuit.sp
+-'  1  0  ~/Lab3/f_circuit_out.lis
+-'  34  67  ~/Lab3/f_circuit.sp
+-'  32  0  ~/Lab3/f_circuit.sp
 -'  1  0  ~/.gitignore
 -'  3  23  ~/README.md
 -'  1  0  ~/README.md
--'  35  0  ~/Lab2/nand.sp
--'  29  13  ~/Lab3/f_circuit.sp
--'  27  24  ~/Lab3/f_circuit.sp
--'  18  9  ~/Lab3/f_circuit.sp
--'  21  3  ~/Lab3/f_circuit.sp
+-'  30  24  ~/Lab3/f_circuit.sp
+-'  22  9  ~/Lab3/f_circuit.sp
 -'  1  0  ~/Lab3/f_circuit.sp
 -'  4408  2  ~/Lab2/nand_out.lis
 -'  1  0  ~/Lab2/nand_out.lis
@@ -170,40 +194,73 @@
 -'  4  0  ~/.bash_profile
 -'  1  0  ~/.bash_profile
 -'  12  0  ~/rc.sp
--'  13  0  ~/rc.sp
--'  1  0  ~/.bash_profilevim
--'  10  0  ~/.bash_profile
--'  1  0  ~/.bash_profilevim
--'  4  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  1  0  ~/rc.sp
--'  10  0  ~/.bash_profile
--'  1  0  ~/.bash_profilevim
--'  4  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  12  0  ~/rc.sp
--'  13  0  ~/rc.sp
--'  1  0  ~/.bash_profilevim
--'  10  0  ~/.bash_profile
--'  1  0  ~/.bash_profilevim
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	"	2	1
-	^	2	2
-	.	2	1
-	+	1	1
-	+	2	1
+> ~/Lab3/f_circuit_out.lis
+	"	6909	1
 
-> ~/README.md
-	"	3	23
-	^	3	24
-	.	3	23
-	+	3	23
+> ~/Lab3/f_circuit.sp
+	"	35	9
+	^	24	47
+	.	35	9
+	+	6	0
+	+	5	4
+	+	3	0
+	+	2	1
+	+	4	26
+	+	25	3
+	+	23	48
+	+	25	44
+	+	26	45
+	+	23	21
+	+	24	39
+	+	23	40
+	+	24	40
+	+	28	44
+	+	29	3
+	+	30	30
+	+	29	21
+	+	25	18
+	+	24	18
+	+	23	17
+	+	30	24
+	+	30	0
+	+	32	13
+	+	29	0
+	+	37	0
+	+	34	7
+	+	29	1
+	+	30	0
+	+	34	31
+	+	34	68
+	+	23	20
+	+	24	19
+	+	25	19
+	+	37	0
+	+	35	27
+	+	36	1
+	+	11	0
+	+	9	5
+	+	33	6
+	+	33	16
+	+	9	29
+	+	8	40
+	+	16	12
+	+	23	7
+	+	24	7
+	+	25	45
+	+	24	46
+	+	35	9
+
+> ~/saed32nm_hvt.spf
+	"	207325	22
+
+> ~/Lab3/f_circuit
+	"	1	0
 
 > ~/Lab2/nand.sp
-	"	35	0
+	"	32	0
 	^	33	23
 	.	33	22
 	+	1	9
@@ -244,33 +301,27 @@
 	+	15	21
 	+	33	22
 
-> ~/Lab3/f_circuit.sp
-	"	29	13
-	^	29	14
-	.	29	13
-	+	6	0
-	+	5	4
-	+	3	0
-	+	2	1
-	+	4	26
-	+	21	3
-	+	19	48
-	+	21	44
-	+	22	45
-	+	19	21
-	+	20	39
-	+	19	40
-	+	20	40
-	+	24	44
-	+	26	3
-	+	27	30
-	+	26	21
-	+	21	18
-	+	20	18
-	+	19	17
-	+	27	24
-	+	27	0
-	+	29	13
+> ~/Lab2/nand
+	"	1	0
+
+> ~/Lab3/f_circuit.pa0
+	"	1	7
+
+> ~/Lab3/f_circuit.st0
+	"	1	0
+
+> ~/.gitignore
+	"	1	0
+	^	1	2
+	.	1	0
+	+	1	1
+	+	1	0
+
+> ~/README.md
+	"	3	23
+	^	3	24
+	.	3	23
+	+	3	23
 
 > ~/Lab2/nand_out.lis
 	"	4408	2
@@ -332,38 +383,4 @@
 	"	1	0
 
 > ~/Lab1/nmos/nmos
-	"	1	0
-
-> ~/Lab1/nmos/nmos.s
-	"	1	0
-
-> ~/Lab1/nmos/nmos_1w.lis
-	"	1	0
-
-> ~/nmos_1w.lis
-	"	1	0
-
-> ~/1021Lab/nmos.sp
-	"	5	36
-	^	5	37
-	.	5	36
-	+	2	16
-	+	1	12
-	+	3	0
-	+	24	0
-	+	17	12
-	+	16	9
-	+	23	3
-	+	16	12
-	+	21	6
-	+	10	34
-	+	22	0
-	+	4	14
-	+	14	26
-	+	5	36
-
-> ~/1021Lab/nmos.s
-	"	1	0
-
-> ~/1021Lab/nmos.
 	"	1	0
